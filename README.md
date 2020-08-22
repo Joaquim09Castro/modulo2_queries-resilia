@@ -1,14 +1,20 @@
 # Projeto de conclusão de módulo #
 
-## Integrantes ##
+## Relatório de banco de dados ##
+---
+
+### Integrantes ###
 
 * Joaquim Castro
 * Gabrielle Sant'anna
 * Jarom Aidukaitis
 * Thays Martins
 
----
-
-## Banco de dados utilizado ##
+### Banco de dados utilizado ###
 
 * Formula 1
+
+### Ferramentas ###
+
+* MySQL
+* Metabase
