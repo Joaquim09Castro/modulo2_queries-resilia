@@ -3,7 +3,7 @@
 ## Integrantes ##
 
 * Joaquim Castro
-* Gabriela Sant'anna
+* Gabrielle Sant'anna
 * Jarom Aidukaitis
 * Thays Martins
 
