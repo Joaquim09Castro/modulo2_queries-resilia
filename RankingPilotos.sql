@@ -70,3 +70,20 @@ ORDER BY
 LIMIT
 	15
 ;
+
+-- Ranking races starts --
+SELECT
+	driverId,
+    COUNT(raceId)
+FROM
+	RESULTS
+GROUP BY
+	driverId
+ORDER BY 
+	COUNT(raceId) desc
+LIMIT
+	40;
+    
+
+
+
