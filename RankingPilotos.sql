@@ -83,7 +83,20 @@ ORDER BY
 	COUNT(raceId) desc
 LIMIT
 	40;
-    
+
+-- RACE WINS PERCENTS --
+SELECT
+	driverId,
+    ROUND((COUNT(R.rank))/(SELECT COUNT(R.rank) FROM RESULTS AS R WHERE R.rank = 1)*100,2)  AS 'vitórias_%'
+FROM
+	RESULTS AS R
+WHERE
+	R.rank = 1
+GROUP BY
+	R.driverId
+ORDER BY
+	COUNT(R.rank) DESC
+;
 
 
 
