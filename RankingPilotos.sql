@@ -98,5 +98,16 @@ ORDER BY
 	COUNT(R.rank) DESC
 ;
 
-
+-- POLE POSITIONS --
+SELECT
+	driverId,
+    COUNT(GRID)
+FROM 
+	RESULTS
+WHERE
+	GRID = 1
+GROUP BY
+	driverId
+ORDER BY
+	COUNT(GRID) desc;
 
