@@ -27,3 +27,26 @@ where r.grid = 1
 group by c.name;
 
 
+-- race starts
+SELECT 
+	c.name,
+    COUNT(r.grid)
+FROM results r
+INNER JOIN constructors c ON c.constructorId = r.constructorId
+GROUP BY c.name;
+
+
+-- race win percentage
+
+-- pit stop average time
+
+SELECT
+	r.constructorId,
+	c.name,
+    ROUND(avg(pt.seconds),2)
+FROM pit_stops pt
+INNER JOIN results r ON r.raceId = pt.raceId
+INNER JOIN constructors c ON c.constructorId = r.constructorId
+GROUP BY c.name, r.constructorId
+
+ 
